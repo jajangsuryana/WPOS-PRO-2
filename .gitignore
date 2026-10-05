@@ -1,5 +1,16 @@
-# Object file
+# Object files
 *.o
-
-# Ada Library Information
 *.ali
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+# Local databases and secrets
+*.db
+*.sqlite
+*.sqlite3
+# Build output
+dist/
+build/
+*.spec
