@@ -242,8 +242,7 @@ class Main(tk.Toplevel):
             if p and len(p)>=6:
                 b=backup()
                 with con() as c:c.execute("update users set password_hash=? where username=?",(ph(p),u))
-                messagebox.showinfo("Reset","Berhasil.
-Backup: "+b,parent=self)
+                messagebox.showinfo("Reset","Berhasil.\nBackup: "+b,parent=self)
         ttk.Button(bar,text="RESET PASSWORD",command=reset).pack(side="left");load()
     def p_laporan(self):
         self.head("Laporan","Penjualan dan ekspor CSV")
